@@ -1,0 +1,12 @@
+---
+title: "ABSLOPE: Test2"
+output: html_notebook
+---
+
+
+```{r}
+library(devtools)
+check("/home/chaitanya/R/x86_64-pc-linux-gnu-library/3.6/SLOPE")
+```
+
+

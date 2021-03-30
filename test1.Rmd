@@ -1,0 +1,40 @@
+---
+title: "ABSLOPE: Test1"
+output: html_notebook
+---
+
+Loading the SLOPE package and abalone dataset.
+```{r}
+library(SLOPE)
+
+X <- abalone$x
+y <- abalone$y
+```
+
+
+```{r}
+n = dim(X)[1]
+p = dim(X)[2]
+
+```
+
+Fiting SLOPE with BH method.
+```{r}
+fit_SLOPE <- SLOPE(X, y, family = "poisson", lambda = "bh")
+
+plot(fit_SLOPE)
+plot(fit_SLOPE, x_variable = "step")
+plot(fit_SLOPE, x_variable = "deviance_ratio")
+
+
+```
+
+Fitting lasso with lambda = lambda_bonf
+```{r}
+lambda_bonf = sd(y)*sqrt(2*log(p))
+fit_lasso <- SLOPE(X,y,family = "poisson", lambda = rep(lambda_bonf, p))
+plot(fit_lasso)
+plot(fit_lasso, x_variable = "step")
+plot(fit_lasso, x_variable = "deviance_ratio")
+```
+
