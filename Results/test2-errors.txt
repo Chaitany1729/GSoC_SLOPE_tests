@@ -1,0 +1,233 @@
+Loading required package: usethis
+Updating SLOPE documentation
+ℹ Loading SLOPE
+Exports from /home/chaitanya/R/GSoC/SLOPE/src/SLOPE.cpp:
+   Rcpp::List sparseSLOPE(arma::sp_mat x, arma::mat y, const Rcpp::List control)
+   Rcpp::List denseSLOPE(arma::mat x, arma::mat y, const Rcpp::List control)
+
+Exports from /home/chaitanya/R/GSoC/SLOPE/src/r-exports.cpp:
+   arma::mat sorted_l1_prox(const arma::mat& x, const arma::vec& lambda)
+
+/home/chaitanya/R/GSoC/SLOPE/src/RcppExports.cpp updated.
+/home/chaitanya/R/GSoC/SLOPE/R/RcppExports.R updated.
+Re-compiling SLOPE
+─  installing *source* package ‘SLOPE’ ... (513ms)
+   ** using staged installation
+   ** libs
+   g++ -std=gnu++11 -I"/usr/share/R/include" -DNDEBUG  -I"/home/chaitanya/R/x86_64-pc-linux-gnu-library/3.6/Rcpp/include" -I"/home/chaitanya/R/x86_64-pc-linux-gnu-library/3.6/RcppArmadillo/include"   -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-jbaK_j/r-base-3.6.3=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -UNDEBUG -Wall -pedantic -g -O0 -fdiagnostics-color=always -c RcppExports.cpp -o RcppExports.o
+   g++ -std=gnu++11 -I"/usr/share/R/include" -DNDEBUG  -I"/home/chaitanya/R/x86_64-pc-linux-gnu-library/3.6/Rcpp/include" -I"/home/chaitanya/R/x86_64-pc-linux-gnu-library/3.6/RcppArmadillo/include"   -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-jbaK_j/r-base-3.6.3=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -UNDEBUG -Wall -pedantic -g -O0 -fdiagnostics-color=always -c SLOPE.cpp -o SLOPE.o
+   g++ -std=gnu++11 -I"/usr/share/R/include" -DNDEBUG  -I"/home/chaitanya/R/x86_64-pc-linux-gnu-library/3.6/Rcpp/include" -I"/home/chaitanya/R/x86_64-pc-linux-gnu-library/3.6/RcppArmadillo/include"   -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-jbaK_j/r-base-3.6.3=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -UNDEBUG -Wall -pedantic -g -O0 -fdiagnostics-color=always -c r-exports.cpp -o r-exports.o
+   g++ -std=gnu++11 -shared -L/usr/lib/R/lib -Wl,-Bsymbolic-functions -Wl,-z,relro -o SLOPE.so RcppExports.o SLOPE.o r-exports.o -llapack -lblas -lgfortran -lm -lquadmath -L/usr/lib/R/lib -lR
+   installing to /tmp/RtmpogVurl/devtools_install_4be52eed3b54/00LOCK-SLOPE/00new/SLOPE/libs
+   ** checking absolute paths in shared objects and dynamic libraries
+─  DONE (SLOPE)
+
+── Conflicts ─────────────────────────────────────────────────────────────────── SLOPE conflicts ──
+x coef.SLOPE() masks SLOPE::coef.SLOPE()
+
+Did you accidentally source a file rather than using `load_all()`?
+Run `rm(list = c("coef.SLOPE"))` to remove the conflicts.[/home/chaitanya/R/GSoC/SLOPE/R/caretSLOPE.R:3] @description Link to unavailable package: caret::train. there is no package called ‘caret’[/home/chaitanya/R/GSoC/SLOPE/R/caretSLOPE.R:9] @return Link to unavailable package: caret::train. there is no package called ‘caret’[/home/chaitanya/R/GSoC/SLOPE/R/caretSLOPE.R:12] @seealso Link to unavailable package: caret::train. there is no package called ‘caret’Writing NAMESPACE
+Writing NAMESPACE
+Writing coef.SLOPE.Rd
+── Building ────────────────────────────────────────────────────────────────────────────── SLOPE ──
+Setting env vars:
+● CFLAGS    : -Wall -pedantic -fdiagnostics-color=always
+● CXXFLAGS  : -Wall -pedantic -fdiagnostics-color=always
+● CXX11FLAGS: -Wall -pedantic -fdiagnostics-color=always
+───────────────────────────────────────────────────────────────────────────────────────────────────
+✓  checking for file ‘/home/chaitanya/R/GSoC/SLOPE/DESCRIPTION’ (1.3s)
+─  preparing ‘SLOPE’: (695ms)
+✓  checking DESCRIPTION meta-information ...
+─  cleaning src
+─  installing the package to build vignettes (365ms)
+✓  creating vignettes (1m 58.8s)
+─  cleaning src
+─  checking for LF line-endings in source and make files and shell scripts (607ms)
+─  checking for empty or unneeded directories
+─  looking to see if a ‘data/datalist’ file should be added
+─  building ‘SLOPE_0.3.2.9000.tar.gz’
+   
+── Checking ────────────────────────────────────────────────────────────────────────────── SLOPE ──
+Setting env vars:
+● _R_CHECK_CRAN_INCOMING_USE_ASPELL_: TRUE
+● _R_CHECK_CRAN_INCOMING_REMOTE_    : FALSE
+● _R_CHECK_CRAN_INCOMING_           : FALSE
+● _R_CHECK_FORCE_SUGGESTS_          : FALSE
+● NOT_CRAN                          : true
+── R CMD check ────────────────────────────────────────────────────────────────────────────────────
+─  using log directory ‘/tmp/RtmpogVurl/SLOPE.Rcheck’ (363ms)
+─  using R version 3.6.3 (2020-02-29)
+─  using platform: x86_64-pc-linux-gnu (64-bit)
+─  using session charset: UTF-8
+─  using options ‘--no-manual --as-cran’
+✓  checking for file ‘SLOPE/DESCRIPTION’
+─  this is package ‘SLOPE’ version ‘0.3.2.9000’
+─  package encoding: UTF-8
+✓  checking package namespace information ...
+N  checking package dependencies (4.6s)
+   Packages suggested but not available for checking:
+     'caret', 'glmnet', 'spelling'
+✓  checking if this is a source package
+✓  checking if there is a namespace
+✓  checking for executable files ...
+✓  checking for hidden files and directories
+✓  checking for portable file names
+✓  checking for sufficient/correct file permissions
+✓  checking serialization versions
+✓  checking whether package ‘SLOPE’ can be installed (1m 20.7s)
+N  checking installed package size ...
+     installed size is 14.3Mb
+     sub-directories of 1Mb or more:
+       libs  13.9Mb
+✓  checking package directory (7.7s)
+✓  checking for future file timestamps (2.2s)
+✓  checking ‘build’ directory
+✓  checking DESCRIPTION meta-information ...
+✓  checking top-level files
+✓  checking for left-over files ...
+✓  checking index information (521ms)
+✓  checking package subdirectories ...
+✓  checking R files for non-ASCII characters ...
+✓  checking R files for syntax errors ...
+✓  checking whether the package can be loaded (957ms)
+✓  checking whether the package can be loaded with stated dependencies (900ms)
+✓  checking whether the package can be unloaded cleanly (932ms)
+✓  checking whether the namespace can be loaded with stated dependencies (956ms)
+✓  checking whether the namespace can be unloaded cleanly (1.1s)
+✓  checking loading without being on the library search path (1.2s)
+✓  checking dependencies in R code (1.2s)
+✓  checking S3 generic/method consistency (1.7s)
+✓  checking replacement functions (962ms)
+✓  checking foreign function calls (1s)
+✓  checking R code for possible problems (6.2s)
+✓  checking Rd files ...
+✓  checking Rd metadata ...
+✓  checking Rd line widths ...
+N  checking Rd cross-references (13.5s)
+   Package unavailable to check Rd xrefs: ‘caret’
+✓  checking for missing documentation entries (1.1s)
+✓  checking for code/documentation mismatches (3.6s)
+W  checking Rd \usage sections ...
+   Undocumented arguments in documentation object 'coef.SLOPE'
+     ‘only_nonzeros’
+   
+   Functions with \usage entries need to have the appropriate \alias
+   entries, and all their arguments documented.
+   The \usage entries must correspond to syntactically valid R code.
+   See chapter ‘Writing R documentation files’ in the ‘Writing R
+   Extensions’ manual.
+✓  checking Rd contents (1.8s)
+✓  checking for unstated dependencies in examples ...
+✓  checking contents of ‘data’ directory ...
+✓  checking data for non-ASCII characters (1.3s)
+✓  checking data for ASCII and uncompressed saves ...
+✓  checking line endings in C/C++/Fortran sources/headers (595ms)
+✓  checking line endings in Makefiles
+✓  checking compilation flags in Makevars ...
+✓  checking for GNU extensions in Makefiles
+✓  checking for portable use of $(BLAS_LIBS) and $(LAPACK_LIBS)
+✓  checking use of SHLIB_OPENMP_*FLAGS in Makefiles
+✓  checking pragmas in C/C++ headers and code ...
+✓  checking compilation flags used
+✓  checking compiled code ...
+✓  checking installed files from ‘inst/doc’ ...
+✓  checking files in ‘vignettes’ ...
+✓  checking examples (7.9s)
+✓  checking for unstated dependencies in ‘tests’ (379ms)
+─  checking tests ...
+✓  Running ‘spelling.R’
+E  Running ‘testthat.R’ [10s/14s] (13.9s)
+   Running the tests in ‘tests/testthat.R’ failed.
+   Last 13 lines of output:
+     Error: there is no package called 'glmnet'
+     Backtrace:
+         █
+      1. └─glmnet::glmnet test-poisson.R:44:2
+      2.   └─base::getExportedValue(pkg, name)
+      3.     └─base::asNamespace(ns)
+      4.       └─base::getNamespace(ns)
+      5.         └─base::loadNamespace(name)
+      6.           └─base::withRestarts(stop(cond), retry_loadNamespace = function() NULL)
+      7.             └─base:::withOneRestart(expr, restarts[[1L]])
+      8.               └─base:::doWithOneRestart(return(expr), restart)
+     
+     [ FAIL 4 | WARN 0 | SKIP 0 | PASS 87 ]
+     Error: Test failures
+     Execution halted
+✓  checking for unstated dependencies in vignettes ...
+✓  checking package vignettes in ‘inst/doc’ ...
+✓  checking re-building of vignette outputs (18.4s)
+✓  checking for detritus in the temp directory
+   
+   See
+     ‘/tmp/RtmpogVurl/SLOPE.Rcheck/00check.log’
+   for details.
+   
+── R CMD check results ────────────────────────────────────────────────────── SLOPE 0.3.2.9000 ────
+Duration: 2m 59s
+
+> checking tests ...
+  See below...
+
+> checking Rd \usage sections ... WARNING
+  Undocumented arguments in documentation object 'coef.SLOPE'
+    ‘only_nonzeros’
+  
+  Functions with \usage entries need to have the appropriate \alias
+  entries, and all their arguments documented.
+  The \usage entries must correspond to syntactically valid R code.
+  See chapter ‘Writing R documentation files’ in the ‘Writing R
+  Extensions’ manual.
+
+> checking package dependencies ... NOTE
+  Packages suggested but not available for checking:
+    'caret', 'glmnet', 'spelling'
+
+> checking installed package size ... NOTE
+    installed size is 14.3Mb
+    sub-directories of 1Mb or more:
+      libs  13.9Mb
+
+> checking Rd cross-references ... NOTE
+  Package unavailable to check Rd xrefs: ‘caret’
+
+── Test failures ──────────────────────────────────────────────────────────────────── testthat ────
+
+> library(testthat)
+> library(SLOPE)
+> 
+> test_check("SLOPE")
+══ Failed tests ════════════════════════════════════════════════════════════════
+── Error (test-caret-training.R:4:3): model training with caret works ──────────
+Error: there is no package called 'caret'
+Backtrace:
+    █
+ 1. └─base::library(caret) test-caret-training.R:4:2
+── Error (test-lasso.R:10:3): lasso and slope fits are equivalent if all lambda are equal ──
+Error: there is no package called 'glmnet'
+Backtrace:
+    █
+ 1. └─base::library(glmnet) test-lasso.R:10:2
+── Error (test-multinomial.R:22:3): glmnet and SLOPE return same unpenalized model ──
+Error: there is no package called 'glmnet'
+Backtrace:
+    █
+ 1. └─base::library(glmnet) test-multinomial.R:22:2
+── Error (test-poisson.R:44:3): SLOPE reproduces lasso fit when all lambda are equal ──
+Error: there is no package called 'glmnet'
+Backtrace:
+    █
+ 1. └─glmnet::glmnet test-poisson.R:44:2
+ 2.   └─base::getExportedValue(pkg, name)
+ 3.     └─base::asNamespace(ns)
+ 4.       └─base::getNamespace(ns)
+ 5.         └─base::loadNamespace(name)
+ 6.           └─base::withRestarts(stop(cond), retry_loadNamespace = function() NULL)
+ 7.             └─base:::withOneRestart(expr, restarts[[1L]])
+ 8.               └─base:::doWithOneRestart(return(expr), restart)
+
+[ FAIL 4 | WARN 0 | SKIP 0 | PASS 87 ]
+Error: Test failures
+Execution halted
+
+1 error x | 1 warning x | 3 notes x

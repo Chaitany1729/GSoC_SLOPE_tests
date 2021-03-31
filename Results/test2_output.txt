@@ -1,0 +1,125 @@
+Updating SLOPE documentation
+ℹ Loading SLOPE
+Writing NAMESPACE
+Writing NAMESPACE
+── Building ────────────────────────────────────────── SLOPE ──
+Setting env vars:
+● CFLAGS    : -Wall -pedantic -fdiagnostics-color=always
+● CXXFLAGS  : -Wall -pedantic -fdiagnostics-color=always
+● CXX11FLAGS: -Wall -pedantic -fdiagnostics-color=always
+───────────────────────────────────────────────────────────────
+✓  checking for file ‘/home/chaitanya/R/ABSLOPE/Tests/SLOPE/DESCRIPTION’ ...
+─  preparing ‘SLOPE’: (1.1s)
+✓  checking DESCRIPTION meta-information ...
+─  cleaning src
+─  installing the package to process help pages
+─  saving partial Rd database (1m 0.7s)
+✓  creating vignettes (19.9s)
+─  cleaning src
+─  checking for LF line-endings in source and make files and shell scripts (483ms)
+─  checking for empty or unneeded directories
+─  looking to see if a ‘data/datalist’ file should be added
+─  building ‘SLOPE_0.3.3.tar.gz’
+   
+── Checking ────────────────────────────────────────── SLOPE ──
+Setting env vars:
+● _R_CHECK_CRAN_INCOMING_USE_ASPELL_: TRUE
+● _R_CHECK_CRAN_INCOMING_REMOTE_    : FALSE
+● _R_CHECK_CRAN_INCOMING_           : FALSE
+● _R_CHECK_FORCE_SUGGESTS_          : FALSE
+● NOT_CRAN                          : true
+── R CMD check ────────────────────────────────────────────────
+─  using log directory ‘/tmp/RtmpogVurl/SLOPE.Rcheck’ (334ms)
+─  using R version 3.6.3 (2020-02-29)
+─  using platform: x86_64-pc-linux-gnu (64-bit)
+─  using session charset: UTF-8
+─  using options ‘--no-manual --as-cran’
+✓  checking for file ‘SLOPE/DESCRIPTION’
+─  this is package ‘SLOPE’ version ‘0.3.3’
+─  package encoding: UTF-8
+✓  checking package namespace information ...
+N  checking package dependencies (3.3s)
+   Package suggested but not available for checking: ‘spelling’
+✓  checking if this is a source package
+✓  checking if there is a namespace
+✓  checking for executable files ...
+✓  checking for hidden files and directories
+✓  checking for portable file names ...
+✓  checking for sufficient/correct file permissions
+✓  checking serialization versions ...
+✓  checking whether package ‘SLOPE’ can be installed (1m 1.7s)
+N  checking installed package size ...
+     installed size is 14.3Mb
+     sub-directories of 1Mb or more:
+       libs  13.9Mb
+✓  checking package directory (2.5s)
+✓  checking for future file timestamps (1.9s)
+✓  checking ‘build’ directory
+✓  checking DESCRIPTION meta-information ...
+✓  checking top-level files
+✓  checking for left-over files
+✓  checking index information ...
+✓  checking package subdirectories ...
+✓  checking R files for non-ASCII characters ...
+✓  checking R files for syntax errors ...
+✓  checking whether the package can be loaded (992ms)
+✓  checking whether the package can be loaded with stated dependencies (913ms)
+✓  checking whether the package can be unloaded cleanly (943ms)
+✓  checking whether the namespace can be loaded with stated dependencies (924ms)
+✓  checking whether the namespace can be unloaded cleanly (999ms)
+✓  checking loading without being on the library search path (990ms)
+✓  checking dependencies in R code (989ms)
+✓  checking S3 generic/method consistency (1.6s)
+✓  checking replacement functions (965ms)
+✓  checking foreign function calls (1s)
+✓  checking R code for possible problems (5.5s)
+✓  checking Rd files ...
+✓  checking Rd metadata ...
+✓  checking Rd line widths ...
+✓  checking Rd cross-references (597ms)
+✓  checking for missing documentation entries (1s)
+✓  checking for code/documentation mismatches (3s)
+✓  checking Rd \usage sections (1.8s)
+✓  checking Rd contents ...
+✓  checking for unstated dependencies in examples ...
+✓  checking contents of ‘data’ directory ...
+✓  checking data for non-ASCII characters (986ms)
+✓  checking data for ASCII and uncompressed saves ...
+✓  checking line endings in C/C++/Fortran sources/headers
+✓  checking line endings in Makefiles
+✓  checking compilation flags in Makevars ...
+✓  checking for GNU extensions in Makefiles ...
+✓  checking for portable use of $(BLAS_LIBS) and $(LAPACK_LIBS)
+✓  checking use of SHLIB_OPENMP_*FLAGS in Makefiles
+✓  checking pragmas in C/C++ headers and code ...
+✓  checking compilation flags used
+✓  checking compiled code ...
+✓  checking installed files from ‘inst/doc’
+✓  checking files in ‘vignettes’ ...
+✓  checking examples (7.8s)
+✓  checking for unstated dependencies in ‘tests’ ...
+─  checking tests ...
+✓  Running ‘spelling.R’
+✓  Running ‘testthat.R’ [12s/17s] (17.1s)
+✓  checking for unstated dependencies in vignettes (17.4s)
+✓  checking package vignettes in ‘inst/doc’ ...
+✓  checking re-building of vignette outputs (15.4s)
+✓  checking for detritus in the temp directory
+   
+   See
+     ‘/tmp/RtmpogVurl/SLOPE.Rcheck/00check.log’
+   for details.
+   
+   
+── R CMD check results ─────────────────────── SLOPE 0.3.3 ────
+Duration: 2m 16.5s
+
+> checking package dependencies ... NOTE
+  Package suggested but not available for checking: ‘spelling’
+
+> checking installed package size ... NOTE
+    installed size is 14.3Mb
+    sub-directories of 1Mb or more:
+      libs  13.9Mb
+
+0 errors ✓ | 0 warnings ✓ | 2 notes x
