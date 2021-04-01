@@ -1,4 +1,4 @@
-## This repository contains test for R-GSoC ABSOLE project
+## This repository contains test solutions for R-GSoC ABSOLE project
 
 All the codes are available in src, Results contains all plots and output files.
 
