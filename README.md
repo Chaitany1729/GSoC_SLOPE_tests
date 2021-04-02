@@ -16,4 +16,4 @@ The algorithm 3: FastProxSL1 in the FastProxSL1.cpp using `RcppArmadillo`. The p
 Results: `prox_sorted_L1()` outperforms `FastProxSL1()`. Considerable difference in execution time is observed for values highe than 10,000. 
 
 ### Test 5: 
-Currently working.
+The apckage in implemented in the directory `slopeSolver`. ADMM algorith is implemented to for soliving purpose. The results are verified witl `SLOPE` package. 
